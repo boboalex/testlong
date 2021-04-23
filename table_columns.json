@@ -1,0 +1,8 @@
+{
+    "database_name": "bo_test",
+    "table_name": "batch_columns",
+    "columns": {
+        "col1": "string",
+        "col2": "string"
+    }
+}

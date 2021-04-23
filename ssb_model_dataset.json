@@ -1,0 +1,779 @@
+{
+    "project": "ssb",
+    "dataset_name": "下钻测试数据集",
+    "description": "",
+    "type": "SQL",
+    "front_v": "v0.2",
+    "model_relations": [
+        {
+            "model_left": "SSB_MODEL",
+            "model_right": "",
+            "relation": []
+        }
+    ],
+    "models": [
+        {
+            "model_name": "SSB_MODEL",
+            "model_alias": "SSB_MODEL",
+            "fact_table": "SSB_SF1.P_LINEORDER",
+            "dimension_tables": [
+                {
+                    "name": "P_LINEORDER",
+                    "type": "regular",
+                    "alias": "P_LINEORDER",
+                    "actual_table": "SSB_SF1.P_LINEORDER",
+                    "dim_cols": [
+                        {
+                            "name": "LO_SHIPMODE",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "varchar",
+                            "alias": "LO_SHIPMODE",
+                            "is_visible": true,
+                            "order": 22,
+                            "invisible": []
+                        },
+                        {
+                            "name": "LO_LINENUMBER",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "bigint",
+                            "alias": "LO_LINENUMBER",
+                            "is_visible": true,
+                            "order": 23,
+                            "invisible": []
+                        },
+                        {
+                            "name": "LO_SUPPKEY",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "integer",
+                            "alias": "LO_SUPPKEY",
+                            "is_visible": true,
+                            "order": 24,
+                            "invisible": []
+                        },
+                        {
+                            "name": "LO_ORDTOTALPRICE",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "bigint",
+                            "alias": "LO_ORDTOTALPRICE",
+                            "is_visible": true,
+                            "order": 25,
+                            "invisible": []
+                        },
+                        {
+                            "name": "LO_QUANTITY",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "bigint",
+                            "alias": "LO_QUANTITY",
+                            "is_visible": true,
+                            "order": 26,
+                            "invisible": []
+                        },
+                        {
+                            "name": "LO_REVENUE",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "bigint",
+                            "alias": "LO_REVENUE",
+                            "is_visible": true,
+                            "order": 27,
+                            "invisible": []
+                        },
+                        {
+                            "name": "LO_ORDERDATE",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "integer",
+                            "alias": "LO_ORDERDATE",
+                            "is_visible": true,
+                            "order": 10,
+                            "invisible": []
+                        },
+                        {
+                            "name": "LO_SUPPLYCOST",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "bigint",
+                            "alias": "LO_SUPPLYCOST",
+                            "is_visible": true,
+                            "order": 28,
+                            "invisible": []
+                        },
+                        {
+                            "name": "LO_ORDERKEY",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "bigint",
+                            "alias": "LO_ORDERKEY",
+                            "is_visible": true,
+                            "order": 29,
+                            "invisible": []
+                        },
+                        {
+                            "name": "LO_SHIPPRIOTITY",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "integer",
+                            "alias": "LO_SHIPPRIOTITY",
+                            "is_visible": true,
+                            "order": 30,
+                            "invisible": []
+                        },
+                        {
+                            "name": "LO_DISCOUNT",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "bigint",
+                            "alias": "LO_DISCOUNT",
+                            "is_visible": true,
+                            "order": 31,
+                            "invisible": []
+                        },
+                        {
+                            "name": "LO_CUSTKEY",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "integer",
+                            "alias": "LO_CUSTKEY",
+                            "is_visible": true,
+                            "order": 32,
+                            "invisible": []
+                        },
+                        {
+                            "name": "LO_ORDERPRIOTITY",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "varchar",
+                            "alias": "订单优先级",
+                            "is_visible": true,
+                            "order": 1,
+                            "invisible": []
+                        },
+                        {
+                            "name": "LO_PARTKEY",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "integer",
+                            "alias": "LO_PARTKEY",
+                            "is_visible": true,
+                            "order": 33,
+                            "invisible": []
+                        },
+                        {
+                            "name": "V_REVENUE",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "bigint",
+                            "alias": "V_REVENUE",
+                            "is_visible": true,
+                            "order": 34,
+                            "invisible": []
+                        },
+                        {
+                            "name": "LO_EXTENDEDPRICE",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "bigint",
+                            "alias": "LO_EXTENDEDPRICE",
+                            "is_visible": true,
+                            "order": 35,
+                            "invisible": []
+                        },
+                        {
+                            "name": "LO_COMMITDATE",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "integer",
+                            "alias": "LO_COMMITDATE",
+                            "is_visible": true,
+                            "order": 36,
+                            "invisible": []
+                        },
+                        {
+                            "name": "LO_TAX",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "bigint",
+                            "alias": "LO_TAX",
+                            "is_visible": true,
+                            "order": 37,
+                            "invisible": []
+                        }
+                    ],
+                    "hierarchys": []
+                },
+                {
+                    "name": "DATES",
+                    "type": "regular",
+                    "alias": "DATES",
+                    "actual_table": "SSB_SF1.DATES",
+                    "dim_cols": [
+                        {
+                            "name": "D_YEARMONTH",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "varchar",
+                            "alias": "D_YEARMONTH",
+                            "is_visible": true,
+                            "order": 9,
+                            "invisible": []
+                        },
+                        {
+                            "name": "D_DAYNUMINWEEK",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "integer",
+                            "alias": "D_DAYNUMINWEEK",
+                            "is_visible": true,
+                            "order": 38,
+                            "invisible": []
+                        },
+                        {
+                            "name": "D_HOLIDAYFL",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "integer",
+                            "alias": "D_HOLIDAYFL",
+                            "is_visible": true,
+                            "order": 39,
+                            "invisible": []
+                        },
+                        {
+                            "name": "D_YEAR",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "integer",
+                            "alias": "年",
+                            "is_visible": true,
+                            "order": 20,
+                            "invisible": []
+                        },
+                        {
+                            "name": "D_DAYNUMINYEAR",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "integer",
+                            "alias": "D_DAYNUMINYEAR",
+                            "is_visible": true,
+                            "order": 40,
+                            "invisible": []
+                        },
+                        {
+                            "name": "D_MONTH",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "varchar",
+                            "alias": "月",
+                            "is_visible": true,
+                            "order": 21,
+                            "invisible": []
+                        },
+                        {
+                            "name": "D_DATE",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "varchar",
+                            "alias": "D_DATE",
+                            "is_visible": true,
+                            "order": 8,
+                            "invisible": []
+                        },
+                        {
+                            "name": "D_LASTDAYINWEEKFL",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "integer",
+                            "alias": "D_LASTDAYINWEEKFL",
+                            "is_visible": true,
+                            "order": 41,
+                            "invisible": []
+                        },
+                        {
+                            "name": "D_DATEKEY",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "integer",
+                            "alias": "D_DATEKEY",
+                            "is_visible": true,
+                            "order": 42,
+                            "invisible": []
+                        },
+                        {
+                            "name": "D_DAYOFWEEK",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "varchar",
+                            "alias": "星期",
+                            "is_visible": true,
+                            "order": 43,
+                            "invisible": []
+                        },
+                        {
+                            "name": "D_WEEKNUMINYEAR",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "integer",
+                            "alias": "D_WEEKNUMINYEAR",
+                            "is_visible": true,
+                            "order": 44,
+                            "invisible": []
+                        },
+                        {
+                            "name": "D_DAYNUMINMONTH",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "integer",
+                            "alias": "D_DAYNUMINMONTH",
+                            "is_visible": true,
+                            "order": 45,
+                            "invisible": []
+                        },
+                        {
+                            "name": "D_MONTHNUMINYEAR",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "integer",
+                            "alias": "D_MONTHNUMINYEAR",
+                            "is_visible": true,
+                            "order": 46,
+                            "invisible": []
+                        },
+                        {
+                            "name": "D_YEARMONTHNUM",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "integer",
+                            "alias": "D_YEARMONTHNUM",
+                            "is_visible": true,
+                            "order": 47,
+                            "invisible": []
+                        },
+                        {
+                            "name": "D_LASTDAYINMONTHFL",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "integer",
+                            "alias": "D_LASTDAYINMONTHFL",
+                            "is_visible": true,
+                            "order": 48,
+                            "invisible": []
+                        },
+                        {
+                            "name": "D_WEEKDAYFL",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "integer",
+                            "alias": "D_WEEKDAYFL",
+                            "is_visible": true,
+                            "order": 49,
+                            "invisible": []
+                        },
+                        {
+                            "name": "D_SELLINGSEASON",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "varchar",
+                            "alias": "季节",
+                            "is_visible": true,
+                            "order": 19,
+                            "invisible": []
+                        }
+                    ],
+                    "hierarchys": [
+                        {
+                            "name": "H1",
+                            "desc": "",
+                            "is_visible": true,
+                            "order": 2,
+                            "dim_cols": [
+                                "D_YEAR",
+                                "D_MONTH",
+                                "D_DAYOFWEEK"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "CUSTOMER",
+                    "type": "regular",
+                    "alias": "CUSTOMER",
+                    "actual_table": "SSB_SF1.CUSTOMER",
+                    "dim_cols": [
+                        {
+                            "name": "C_NAME",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "varchar",
+                            "alias": "客户名",
+                            "is_visible": true,
+                            "order": 5,
+                            "invisible": []
+                        },
+                        {
+                            "name": "C_NATION",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "varchar",
+                            "alias": "客户国家",
+                            "is_visible": true,
+                            "order": 6,
+                            "invisible": []
+                        },
+                        {
+                            "name": "C_PHONE",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "varchar",
+                            "alias": "C_PHONE",
+                            "is_visible": true,
+                            "order": 50,
+                            "invisible": []
+                        },
+                        {
+                            "name": "C_ADDRESS",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "varchar",
+                            "alias": "C_ADDRESS",
+                            "is_visible": true,
+                            "order": 51,
+                            "invisible": []
+                        },
+                        {
+                            "name": "C_CITY",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "varchar",
+                            "alias": "客户城市",
+                            "is_visible": true,
+                            "order": 4,
+                            "invisible": []
+                        },
+                        {
+                            "name": "C_REGION",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "varchar",
+                            "alias": "客户地域",
+                            "is_visible": true,
+                            "order": 7,
+                            "invisible": []
+                        },
+                        {
+                            "name": "C_CUSTKEY",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "integer",
+                            "alias": "C_CUSTKEY",
+                            "is_visible": true,
+                            "order": 52,
+                            "invisible": []
+                        },
+                        {
+                            "name": "C_MKTSEGMENT",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "varchar",
+                            "alias": "C_MKTSEGMENT",
+                            "is_visible": true,
+                            "order": 53,
+                            "invisible": []
+                        }
+                    ],
+                    "hierarchys": []
+                },
+                {
+                    "name": "SUPPLIER",
+                    "type": "regular",
+                    "alias": "SUPPLIER",
+                    "actual_table": "SSB_SF1.SUPPLIER",
+                    "dim_cols": [
+                        {
+                            "name": "S_ADDRESS",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "varchar",
+                            "alias": "S_ADDRESS",
+                            "is_visible": true,
+                            "order": 54,
+                            "invisible": []
+                        },
+                        {
+                            "name": "S_PHONE",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "varchar",
+                            "alias": "S_PHONE",
+                            "is_visible": true,
+                            "order": 55,
+                            "invisible": []
+                        },
+                        {
+                            "name": "S_NAME",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "varchar",
+                            "alias": "供应商名称",
+                            "is_visible": true,
+                            "order": 16,
+                            "invisible": []
+                        },
+                        {
+                            "name": "S_SUPPKEY",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "integer",
+                            "alias": "S_SUPPKEY",
+                            "is_visible": true,
+                            "order": 56,
+                            "invisible": []
+                        },
+                        {
+                            "name": "S_NATION",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "varchar",
+                            "alias": "S_NATION",
+                            "is_visible": true,
+                            "order": 17,
+                            "invisible": []
+                        },
+                        {
+                            "name": "S_REGION",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "varchar",
+                            "alias": "S_REGION",
+                            "is_visible": true,
+                            "order": 18,
+                            "invisible": []
+                        },
+                        {
+                            "name": "S_CITY",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "varchar",
+                            "alias": "S_CITY",
+                            "is_visible": true,
+                            "order": 15,
+                            "invisible": []
+                        }
+                    ],
+                    "hierarchys": [
+                        {
+                            "name": "地理层级",
+                            "desc": "",
+                            "is_visible": true,
+                            "order": 3,
+                            "dim_cols": [
+                                "S_REGION",
+                                "S_NATION",
+                                "S_CITY"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "PART",
+                    "type": "regular",
+                    "alias": "PART",
+                    "actual_table": "SSB_SF1.PART",
+                    "dim_cols": [
+                        {
+                            "name": "P_TYPE",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "varchar",
+                            "alias": "P_TYPE",
+                            "is_visible": true,
+                            "order": 14,
+                            "invisible": []
+                        },
+                        {
+                            "name": "P_SIZE",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "integer",
+                            "alias": "P_SIZE",
+                            "is_visible": true,
+                            "order": 57,
+                            "invisible": []
+                        },
+                        {
+                            "name": "P_CONTAINER",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "varchar",
+                            "alias": "P_CONTAINER",
+                            "is_visible": true,
+                            "order": 58,
+                            "invisible": []
+                        },
+                        {
+                            "name": "P_BRAND",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "varchar",
+                            "alias": "P_BRAND",
+                            "is_visible": true,
+                            "order": 11,
+                            "invisible": []
+                        },
+                        {
+                            "name": "P_PARTKEY",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "integer",
+                            "alias": "P_PARTKEY",
+                            "is_visible": true,
+                            "order": 59,
+                            "invisible": []
+                        },
+                        {
+                            "name": "P_NAME",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "varchar",
+                            "alias": "P_NAME",
+                            "is_visible": true,
+                            "order": 13,
+                            "invisible": []
+                        },
+                        {
+                            "name": "P_CATEGORY",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "varchar",
+                            "alias": "P_CATEGORY",
+                            "is_visible": true,
+                            "order": 12,
+                            "invisible": []
+                        },
+                        {
+                            "name": "P_MFGR",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "varchar",
+                            "alias": "P_MFGR",
+                            "is_visible": true,
+                            "order": 60,
+                            "invisible": []
+                        },
+                        {
+                            "name": "P_COLOR",
+                            "desc": "",
+                            "type": 0,
+                            "data_type": "varchar",
+                            "alias": "P_COLOR",
+                            "is_visible": true,
+                            "order": 61,
+                            "invisible": []
+                        }
+                    ],
+                    "hierarchys": []
+                }
+            ],
+            "measures": [
+                {
+                    "name": "V_REVENUE_SUM",
+                    "desc": "",
+                    "data_type": "",
+                    "expression": "SUM",
+                    "dim_column": "P_LINEORDER.V_REVENUE",
+                    "alias": "V_REVENUE_SUM",
+                    "is_visible": true,
+                    "order": -1,
+                    "invisible": []
+                },
+                {
+                    "name": "LO_REVENUE_SUM",
+                    "desc": "",
+                    "data_type": "",
+                    "expression": "SUM",
+                    "dim_column": "P_LINEORDER.LO_REVENUE",
+                    "alias": "LO_REVENUE_SUM",
+                    "is_visible": true,
+                    "order": -1,
+                    "invisible": []
+                },
+                {
+                    "name": "COUNT_ALL",
+                    "desc": "",
+                    "data_type": "",
+                    "expression": "COUNT",
+                    "dim_column": "1",
+                    "alias": "COUNT_ALL",
+                    "is_visible": true,
+                    "order": -1,
+                    "invisible": []
+                },
+                {
+                    "name": "COUNT_DISTINCT_CUST",
+                    "desc": "",
+                    "data_type": "",
+                    "expression": "COUNT_DISTINCT",
+                    "dim_column": "CUSTOMER.C_CUSTKEY",
+                    "alias": "COUNT_DISTINCT_CUST",
+                    "is_visible": true,
+                    "order": -1,
+                    "invisible": []
+                }
+            ]
+        }
+    ],
+    "calculate_measures": [
+        {
+            "name": "test0",
+            "format": "regular",
+            "desc": "",
+            "folder": "Calculated Measure",
+            "expression": "0",
+            "is_visible": true,
+            "order": -1,
+            "invisible": []
+        }
+    ],
+    "named_sets": [],
+    "dim_table_model_relations": [
+        {
+            "model_name": "SSB_MODEL",
+            "table_relations": [
+                {
+                    "table_name": "P_LINEORDER",
+                    "relation_type": 0,
+                    "relation_fact_key": "",
+                    "relation_bridge_table_name": ""
+                },
+                {
+                    "table_name": "DATES",
+                    "relation_type": 0,
+                    "relation_fact_key": "",
+                    "relation_bridge_table_name": ""
+                },
+                {
+                    "table_name": "CUSTOMER",
+                    "relation_type": 0,
+                    "relation_fact_key": "",
+                    "relation_bridge_table_name": ""
+                },
+                {
+                    "table_name": "SUPPLIER",
+                    "relation_type": 0,
+                    "relation_fact_key": "",
+                    "relation_bridge_table_name": ""
+                },
+                {
+                    "table_name": "PART",
+                    "relation_type": 0,
+                    "relation_fact_key": "",
+                    "relation_bridge_table_name": ""
+                }
+            ]
+        }
+    ],
+    "canvas": "{\"models\":[]}"
+}
